@@ -16,6 +16,12 @@ class Sub : public Base {
         {
                 return this->left->stringify() + " - " + this->right->stringify();
         }
+	Iterator* create_iterator()
+        {
+                BinaryIterator* binIt = new BinaryIterator(this);
+                return binIt;
+        }
+
 };
 #endif //__SUB_HPP__
 

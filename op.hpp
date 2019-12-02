@@ -14,6 +14,13 @@ private:
  }
         double evaluate() { return val; }
         std::string stringify() {std::string s = std::to_string(val); return s; }
+
+	Iterator* create_iterator()
+        {
+                NullIterator* nullIt = new NullIterator(this);
+                return nullIt;
+        }
+
 };
 
 #endif //__OP_HPP__

@@ -17,6 +17,12 @@ class Pow : public Base {
         {
                 return this->left->stringify() + " ^ " + this->right->stringify();
         }
+	Iterator* create_iterator()
+        {
+                BinaryIterator* binIt = new BinaryIterator(this);
+                return binIt;
+        }
+
 };
 
 #endif //__POW_HPP__
