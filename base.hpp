@@ -2,7 +2,9 @@
 #define __BASE_HPP__
 
 #include <string>
+#include "iterator.hpp"
 
+class Iterator;
 class Base {
     public:
         /* Constructors */
@@ -11,7 +13,14 @@ class Base {
 	};
 	Base* left;
 	Base* right; 
-	
+	Base* get_left()
+	{
+		return this->left;
+	}
+	Base* get_right() 
+        {
+                return this->right;
+        } 	
         /* Pure Virtual Functions */
         virtual double evaluate() = 0;
         virtual std::string stringify() = 0;

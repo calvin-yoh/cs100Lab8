@@ -70,6 +70,77 @@ TEST(SubTest, SubEvaluate)
         Base* test = new Sub(val1, val2);
         EXPECT_EQ(test->evaluate(), 3);
 }
+TEST(SubCount, SubEvaluate)
+{
+        Base* val1 = new Op(7);
+        Base* val2 = new Op(4);
+        Base* test = new Sub(val1, val2);
+        EXPECT_EQ(test->evaluate(), 3);
+}
+
+TEST(AddCount, AddEvaluate)
+{
+        Base* val1 = new Op(7);
+        Base* val2 = new Op(4);
+        Base* test = new Sub(val1, val2);
+        EXPECT_EQ(test->evaluate(), 3);
+}
+
+TEST(DivCount, DivEvaluate)
+{
+        Base* val1 = new Op(7);
+        Base* val2 = new Op(4);
+        Base* test = new Sub(val1, val2);
+        EXPECT_EQ(test->evaluate(), 3);
+}
+
+TEST(MultCount, MultEvaluate)
+{
+        Base* val1 = new Op(7);
+        Base* val2 = new Op(4);
+        Base* test = new Sub(val1, val2);
+        EXPECT_EQ(test->evaluate(), 3);
+}
+
+TEST(PowCount, PowEvaluate)
+{
+        Base* val1 = new Op(7);
+        Base* val2 = new Op(4);
+        Base* test = new Sub(val1, val2);
+        EXPECT_EQ(test->evaluate(), 3);
+}
+
+TEST(IteratorTestOne, NullCheck)
+{
+        Base* val1 = new Op(7);
+        Base* val2 = new Op(4);
+        Base* test = new Sub(val1, val2);
+        EXPECT_EQ(test->evaluate(), 3);
+}
+
+TEST(IteratorTestTwo, BinaryCheck)
+{
+        Base* val1 = new Op(7);
+        Base* val2 = new Op(4);
+        Base* test = new Sub(val1, val2);
+        EXPECT_EQ(test->evaluate(), 3);
+}
+
+TEST(IteratorTestThree, UnaryCheck)
+{
+        Base* val1 = new Op(7);
+        Base* val2 = new Op(4);
+        Base* test = new Sub(val1, val2);
+        EXPECT_EQ(test->evaluate(), 3);
+}
+
+TEST(IteratorTestFour, PreOrderCheck)
+{
+        Base* val1 = new Op(7);
+        Base* val2 = new Op(4);
+        Base* test = new Sub(val1, val2);
+        EXPECT_EQ(test->evaluate(), 3);
+}
 
 int main(int argc, char **argv) {
 	::testing::InitGoogleTest(&argc, argv);

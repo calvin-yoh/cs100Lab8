@@ -11,6 +11,10 @@ ADD_EXECUTABLE(test
         Sub.cpp
         Div.cpp
         Factory.cpp
+	iterator.hpp
+	binary_iterator.cpp
+	preorder_iterator.cpp
+	unary_iterator.cpp
 )
 
 ADD_EXECUTABLE(calculator
@@ -21,6 +25,11 @@ ADD_EXECUTABLE(calculator
         Sub.cpp
         Div.cpp
         Factory.cpp
+	iterator.hpp
+        binary_iterator.cpp
+        preorder_iterator.cpp
+        unary_iterator.cpp
+	CountVisitor.cpp
 )
 
 
@@ -28,4 +37,5 @@ ADD_EXECUTABLE(calculator
 
 TARGET_LINK_LIBRARIES(test gtest)
 TARGET_COMPILE_DEFINITIONS(test PRIVATE gtest_disable_pthreads=ON)
+
 
